@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/mohamed/.config/vim'
+let g:netrw_dirhist_5='/home/mohamed/.config/vim/keymap'
+let g:netrw_dirhist_4='/home/mohamed/.config/vim'
+let g:netrw_dirhist_3='/home/mohamed/.config'
+let g:netrw_dirhist_2='/home/mohamed'
+let g:netrw_dirhist_1='/home/mohamed/Sources'
+let g:netrw_dirhist_0='/home/mohamed/Sources/Colors'
+let g:netrw_dirhist_9='/home/mohamed/.config/zathura'
+let g:netrw_dirhist_8='/home/mohamed/.config'
+let g:netrw_dirhist_7='/home/mohamed/.config/vim/plugin'

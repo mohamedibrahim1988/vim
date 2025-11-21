@@ -18,6 +18,7 @@ set smartcase
 set showmatch
 set wildmenu
 set wildmode=longest,full
+set wildignorecase                           " Non-case-sensitive file name completion
 set wildignore=*.docx,*.jpg,*.jpeg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set complete+=k
 set completeopt=menu,menuone,longest
@@ -39,9 +40,15 @@ set termguicolors
 
 let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_enable_italic = 1
-
 colorscheme tokyonight
+set guifont=JetBrainsMono\ Nerd\ Font
+" Italic comments.
+highlight Comment cterm=italic
 
+" No wiggly line in terminal. Use underline instead. 
+if has('terminal')
+  hi SpellBad cterm=underline
+endif
 " misc 
 set showcmd
 set noswapfile
@@ -61,4 +68,5 @@ while c <= 'z'
 endw
 set timeout ttimeoutlen=50
 set clipboard=unnamedplus
-set guifont=JetBrainsMono\ Nerd\ Font
+set delcombine
+set nojoinspaces

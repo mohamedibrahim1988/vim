@@ -1,4 +1,5 @@
 function! EngType()
+    " Remove word in input mode
     inoremap jj <c-w>
     set keymap=us-altlatin
     set norightleft

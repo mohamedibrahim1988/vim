@@ -1,7 +1,7 @@
 set laststatus=2
 set noshowmode
-hi Filename ctermfg=145 cterm=italic ctermbg=235 guifg=#abb2bf guibg=#282c34
-hi Fileformat ctermbg=145 ctermfg=235 guifg=#282c34 guibg=#abb2bf 
+hi Filename ctermbg=238 ctermfg=75 guibg=#444444 guifg=#61afef
+hi Fileformat ctermfg=135 ctermbg=235 guifg=#9E6FFE guibg=#282c34
 hi Position ctermbg=145 ctermfg=235 guifg=#282c34 guibg=#abb2bf
 hi column ctermbg=238 ctermfg=75 guibg=#494b53 guifg=#61afef
 let g:currentmode={
@@ -37,12 +37,12 @@ set statusline=
 set statusline+=%{ChangeStatuslineColor()}               " Changing the statusline color
 set statusline+=%0*\ %{toupper(g:currentmode[mode()])}   " Current mode
 set statusline+=%#Filename#
-set statusline+=%f\  " File path, as typed or relative to current directory
-set statusline+=%{&modified?'[+]\ ':''}
-set statusline+=%{&readonly?'\ ':''}
+set statusline+=%F\  " File path, as typed or relative to current directory
 set statusline+=%= " Separation point between left and right aligned items
 set statusline+=%#Fileformat#
-set statusline+=\ %y
+set statusline+=%k\ \|\ %y
+set statusline+=\ %{&modified?'[+]\ ':''}
+set statusline+=%{&readonly?'\ ':''}
 set statusline+=%#Column#
 set statusline+=\ [C%2v]
 set statusline+=%3l:%L

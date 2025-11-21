@@ -64,3 +64,5 @@ tnoremap <C-j> <C-\><C-n><C-w>j
 tnoremap <C-k> <C-\><C-n><C-w>k 
 tnoremap <C-l> <C-\><C-n><C-w>l 
 tnoremap jk <C-\><C-n>
+" Command to Edit directory or file
+command! Re edit ~/.config/vim
