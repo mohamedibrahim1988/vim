@@ -40,7 +40,7 @@ set termguicolors
 
 let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+colorscheme gruvbox
 set guifont=JetBrainsMono\ Nerd\ Font
 " Italic comments.
 highlight Comment cterm=italic
@@ -67,6 +67,7 @@ while c <= 'z'
   let c = nr2char(1+char2nr(c))
 endw
 set timeout ttimeoutlen=50
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set delcombine
 set nojoinspaces
+set tags+=/home/mohamed/.config/vim/tags;/
