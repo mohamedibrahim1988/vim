@@ -31,6 +31,7 @@ function! FzyAg(...)
         \ . '"' . query . '" | fzy'
 
     let result = systemlist(cmd)
+    redraw!
 
     if empty(result)
         echo "No match found"
@@ -54,6 +55,7 @@ function! FzyRg(...)
                 \ . '"' . query . '" | fzy'
 
     let result = systemlist(cmd)
+    redraw!
     if empty(result)
         echo "No match found"
         redraw!

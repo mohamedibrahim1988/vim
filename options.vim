@@ -14,7 +14,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-" showmatch pairs
+" show match pairs
 set showmatch
 set wildmenu
 set wildmode=longest,full
